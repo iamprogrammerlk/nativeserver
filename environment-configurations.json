@@ -1,159 +1,163 @@
 {
-  "php": {
-    "windows-11": {
+  "windows-11": {
+    "php": {
       "multiple-version": "allowed",
       "versions": [
         { "version": "8.3-latest", "manager": "winget", "package": "PHP.PHP.8.3", "binary": "php-cgi.exe", "command": "winget install PHP.PHP.8.3 -e --accept-source-agreements --accept-package-agreements", "status": "supported" },
         { "version": "8.2", "manager": "winget", "package": "PHP.PHP.8.2", "binary": "php-cgi.exe", "command": "winget install PHP.PHP.8.2 -e --accept-source-agreements --accept-package-agreements", "status": "supported" }
       ]
     },
-    "macos-14": {
+    "apache": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "2.4-latest", "manager": "winget", "package": "ApacheFriends.Xampp.8.2", "binary": "httpd.exe", "command": "winget install ApacheFriends.Xampp.8.2 -e --accept-source-agreements --accept-package-agreements", "status": "supported" }
+      ]
+    },
+    "mysql": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "8.0-latest", "manager": "winget", "package": "Oracle.MySQL", "binary": "mysqld.exe", "command": "winget install Oracle.MySQL -e --accept-source-agreements --accept-package-agreements", "status": "supported" }
+      ]
+    },
+    "nginx": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "1.25-latest", "manager": "winget", "package": "nginx.nginx", "binary": "nginx.exe", "command": "winget install nginx.nginx -e --accept-source-agreements --accept-package-agreements", "status": "supported" }
+      ]
+    }
+  },
+  "macos-14": {
+    "php": {
       "multiple-version": "allowed",
       "versions": [
         { "version": "8.3-latest", "manager": "brew", "package": "php", "binary": "php-cgi", "command": "brew install php", "status": "supported" },
         { "version": "8.2", "manager": "brew", "package": "php@8.2", "binary": "php-cgi", "command": "brew install php@8.2", "status": "supported" }
       ]
     },
-    "ubuntu-2604": {
+    "apache": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "2.4-latest", "manager": "brew", "package": "httpd", "binary": "httpd", "command": "brew install httpd", "status": "supported" }
+      ]
+    },
+    "mysql": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "8.0-latest", "manager": "brew", "package": "mysql", "binary": "mysqld", "command": "brew install mysql", "status": "supported" }
+      ]
+    },
+    "nginx": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "1.25-latest", "manager": "brew", "package": "nginx", "binary": "nginx", "command": "brew install nginx", "status": "supported" }
+      ]
+    }
+  },
+  "ubuntu-2604": {
+    "php": {
       "multiple-version": "allowed",
       "versions": [
         { "version": "8.3-latest", "manager": "apt", "package": "php8.3-cgi", "binary": "php-cgi8.3", "command": "pkexec apt-get install -y php8.3-cgi", "status": "supported" },
         { "version": "8.2", "manager": "apt", "package": "php8.2-cgi", "binary": "php-cgi8.2", "command": "pkexec apt-get install -y php8.2-cgi", "status": "supported" }
       ]
     },
-    "ubuntu-2404": {
+    "apache": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "2.4-latest", "manager": "apt", "package": "apache2", "binary": "apache2", "command": "pkexec apt-get install -y apache2", "status": "supported" }
+      ]
+    },
+    "mysql": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "8.0-latest", "manager": "apt", "package": "mysql-server", "binary": "mysqld", "command": "pkexec apt-get install -y mysql-server", "status": "supported" }
+      ]
+    },
+    "nginx": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "1.25-latest", "manager": "apt", "package": "nginx", "binary": "nginx", "command": "pkexec apt-get install -y nginx", "status": "supported" }
+      ]
+    }
+  },
+  "ubuntu-2404": {
+    "php": {
       "multiple-version": "allowed",
       "versions": [
         { "version": "8.3-latest", "manager": "apt", "package": "php8.3-cgi", "binary": "php-cgi8.3", "command": "pkexec apt-get install -y php8.3-cgi", "status": "supported" },
         { "version": "8.2", "manager": "apt", "package": "php8.2-cgi", "binary": "php-cgi8.2", "command": "pkexec apt-get install -y php8.2-cgi", "status": "supported" }
       ]
     },
-    "debian-12": {
+    "apache": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "2.4-latest", "manager": "apt", "package": "apache2", "binary": "apache2", "command": "pkexec apt-get install -y apache2", "status": "supported" }
+      ]
+    },
+    "mysql": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "8.0-latest", "manager": "apt", "package": "mysql-server", "binary": "mysqld", "command": "pkexec apt-get install -y mysql-server", "status": "supported" }
+      ]
+    },
+    "nginx": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "1.25-latest", "manager": "apt", "package": "nginx", "binary": "nginx", "command": "pkexec apt-get install -y nginx", "status": "supported" }
+      ]
+    }
+  },
+  "debian-12": {
+    "php": {
       "multiple-version": "allowed",
       "versions": [
         { "version": "8.3-latest", "manager": "apt", "package": "php8.3-cgi", "binary": "php-cgi8.3", "command": "pkexec apt-get install -y php8.3-cgi", "status": "supported" },
         { "version": "8.2", "manager": "apt", "package": "php8.2-cgi", "binary": "php-cgi8.2", "command": "pkexec apt-get install -y php8.2-cgi", "status": "supported" }
       ]
     },
-    "fedora-44": {
+    "apache": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "2.4-latest", "manager": "apt", "package": "apache2", "binary": "apache2", "command": "pkexec apt-get install -y apache2", "status": "supported" }
+      ]
+    },
+    "mysql": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "8.0-latest", "manager": "apt", "package": "mysql-server", "binary": "mysqld", "command": "pkexec apt-get install -y mysql-server", "status": "supported" }
+      ]
+    },
+    "nginx": {
+      "multiple-version": "not-allowed",
+      "versions": [
+        { "version": "1.25-latest", "manager": "apt", "package": "nginx", "binary": "nginx", "command": "pkexec apt-get install -y nginx", "status": "supported" }
+      ]
+    }
+  },
+  "fedora-44": {
+    "php": {
       "multiple-version": "allowed",
       "versions": [
         { "version": "8.3-latest", "manager": "dnf", "package": "php-cgi", "binary": "php-cgi", "command": "pkexec dnf install -y php-cgi", "status": "supported" },
         { "version": "8.2", "manager": "dnf", "package": "php-cgi", "binary": "php-cgi", "command": "pkexec dnf install -y php-cgi", "status": "deprecated" },
         { "version": "8.0", "manager": "dnf", "package": "php-cgi", "binary": "php-cgi", "command": "pkexec dnf install -y php-cgi", "status": "unsupported" }
       ]
-    }
-  },
-  "apache": {
-    "windows-11": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "2.4-latest", "manager": "winget", "package": "ApacheFriends.Xampp.8.2", "binary": "httpd.exe", "command": "winget install ApacheFriends.Xampp.8.2 -e --accept-source-agreements --accept-package-agreements", "status": "supported" }
-      ]
     },
-    "macos-14": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "2.4-latest", "manager": "brew", "package": "httpd", "binary": "httpd", "command": "brew install httpd", "status": "supported" }
-      ]
-    },
-    "ubuntu-2604": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "2.4-latest", "manager": "apt", "package": "apache2", "binary": "apache2", "command": "pkexec apt-get install -y apache2", "status": "supported" }
-      ]
-    },
-    "ubuntu-2404": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "2.4-latest", "manager": "apt", "package": "apache2", "binary": "apache2", "command": "pkexec apt-get install -y apache2", "status": "supported" }
-      ]
-    },
-    "debian-12": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "2.4-latest", "manager": "apt", "package": "apache2", "binary": "apache2", "command": "pkexec apt-get install -y apache2", "status": "supported" }
-      ]
-    },
-    "fedora-44": {
+    "apache": {
       "multiple-version": "not-allowed",
       "versions": [
         { "version": "2.4-latest", "manager": "dnf", "package": "httpd", "binary": "httpd", "command": "pkexec dnf install -y httpd", "status": "supported" },
         { "version": "2.3", "manager": "dnf", "package": "httpd", "binary": "httpd", "command": "pkexec dnf install -y httpd", "status": "deprecated" },
         { "version": "2.2", "manager": "dnf", "package": "httpd", "binary": "httpd", "command": "pkexec dnf install -y httpd", "status": "unsupported" }
       ]
-    }
-  },
-  "mysql": {
-    "windows-11": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "8.0-latest", "manager": "winget", "package": "Oracle.MySQL", "binary": "mysqld.exe", "command": "winget install Oracle.MySQL -e --accept-source-agreements --accept-package-agreements", "status": "supported" }
-      ]
     },
-    "macos-14": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "8.0-latest", "manager": "brew", "package": "mysql", "binary": "mysqld", "command": "brew install mysql", "status": "supported" }
-      ]
-    },
-    "ubuntu-2604": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "8.0-latest", "manager": "apt", "package": "mysql-server", "binary": "mysqld", "command": "pkexec apt-get install -y mysql-server", "status": "supported" }
-      ]
-    },
-    "ubuntu-2404": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "8.0-latest", "manager": "apt", "package": "mysql-server", "binary": "mysqld", "command": "pkexec apt-get install -y mysql-server", "status": "supported" }
-      ]
-    },
-    "debian-12": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "8.0-latest", "manager": "apt", "package": "mysql-server", "binary": "mysqld", "command": "pkexec apt-get install -y mysql-server", "status": "supported" }
-      ]
-    },
-    "fedora-44": {
+    "mysql": {
       "multiple-version": "not-allowed",
       "versions": [
         { "version": "8.0-latest", "manager": "dnf", "package": "mysql-server", "binary": "mysqld", "command": "pkexec dnf install -y mysql-server", "status": "supported" }
       ]
-    }
-  },
-  "nginx": {
-    "windows-11": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "1.25-latest", "manager": "winget", "package": "nginx.nginx", "binary": "nginx.exe", "command": "winget install nginx.nginx -e --accept-source-agreements --accept-package-agreements", "status": "supported" }
-      ]
     },
-    "macos-14": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "1.25-latest", "manager": "brew", "package": "nginx", "binary": "nginx", "command": "brew install nginx", "status": "supported" }
-      ]
-    },
-    "ubuntu-2604": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "1.25-latest", "manager": "apt", "package": "nginx", "binary": "nginx", "command": "pkexec apt-get install -y nginx", "status": "supported" }
-      ]
-    },
-    "ubuntu-2404": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "1.25-latest", "manager": "apt", "package": "nginx", "binary": "nginx", "command": "pkexec apt-get install -y nginx", "status": "supported" }
-      ]
-    },
-    "debian-12": {
-      "multiple-version": "not-allowed",
-      "versions": [
-        { "version": "1.25-latest", "manager": "apt", "package": "nginx", "binary": "nginx", "command": "pkexec apt-get install -y nginx", "status": "supported" }
-      ]
-    },
-    "fedora-44": {
+    "nginx": {
       "multiple-version": "not-allowed",
       "versions": [
         { "version": "1.25-latest", "manager": "dnf", "package": "nginx", "binary": "nginx", "command": "pkexec dnf install -y nginx", "status": "supported" }
