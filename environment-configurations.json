@@ -1,0 +1,61 @@
+{
+  "PHP": {
+    "windows": [
+      { "version": "8.3", "manager": "winget", "package": "PHP.PHP.8.3", "binary": "php-cgi.exe" },
+      { "version": "8.2", "manager": "winget", "package": "PHP.PHP.8.2", "binary": "php-cgi.exe" }
+    ],
+    "macos": [
+      { "version": "8.3", "manager": "brew", "package": "php", "binary": "php-cgi" },
+      { "version": "8.2", "manager": "brew", "package": "php@8.2", "binary": "php-cgi" }
+    ],
+    "linux_apt": [
+      { "version": "8.3", "manager": "apt", "package": "php8.3-cgi", "binary": "php-cgi8.3" },
+      { "version": "8.2", "manager": "apt", "package": "php8.2-cgi", "binary": "php-cgi8.2" }
+    ],
+    "linux_dnf": [
+      { "version": "8.3", "manager": "dnf", "package": "php-cgi", "binary": "php-cgi" }
+    ]
+  },
+  "APACHE": {
+    "windows": [
+      { "version": "2.4", "manager": "winget", "package": "ApacheFriends.Xampp.8.2", "binary": "httpd.exe" }
+    ],
+    "macos": [
+      { "version": "2.4", "manager": "brew", "package": "httpd", "binary": "httpd" }
+    ],
+    "linux_apt": [
+      { "version": "2.4", "manager": "apt", "package": "apache2", "binary": "apache2" }
+    ],
+    "linux_dnf": [
+      { "version": "2.4", "manager": "dnf", "package": "httpd", "binary": "httpd" }
+    ]
+  },
+  "MYSQL": {
+    "windows": [
+      { "version": "8.0", "manager": "winget", "package": "Oracle.MySQL", "binary": "mysqld.exe" }
+    ],
+    "macos": [
+      { "version": "8.0", "manager": "brew", "package": "mysql", "binary": "mysqld" }
+    ],
+    "linux_apt": [
+      { "version": "8.0", "manager": "apt", "package": "mysql-server", "binary": "mysqld" }
+    ],
+    "linux_dnf": [
+      { "version": "8.0", "manager": "dnf", "package": "mysql-server", "binary": "mysqld" }
+    ]
+  },
+  "NGINX": {
+    "windows": [
+      { "version": "1.25", "manager": "winget", "package": "nginx.nginx", "binary": "nginx.exe" }
+    ],
+    "macos": [
+      { "version": "1.25", "manager": "brew", "package": "nginx", "binary": "nginx" }
+    ],
+    "linux_apt": [
+      { "version": "1.25", "manager": "apt", "package": "nginx", "binary": "nginx" }
+    ],
+    "linux_dnf": [
+      { "version": "1.25", "manager": "dnf", "package": "nginx", "binary": "nginx" }
+    ]
+  }
+}
